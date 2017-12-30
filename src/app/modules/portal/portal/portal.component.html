@@ -39,15 +39,15 @@
     <nav class="col-sm-2 col-md-1 hidden-xs-down bg-faded sidebar">
       <div class="navbar-text mx-2" href="#">Applications</div>
       <ul class="nav nav-pills flex-column px-3">
-        <li *ngFor="let app of applications" class="nav-item my-1">        	
-        	<button type="button" class="btn btn-block" [class.active]="selectedApp.id == app.id" (click)="onSelect(app.id)">
-        		<div class="row">
-        			<div class="col-4 p-0 text-right d-inline-block">
-        				<img *ngIf="app.icon" [src]="sanitize(app.icon)">
-        			</div>
-        			<div class="col-8 p-0 text-left d-inline-block navbar-text">{{app.name}}</div>
-        		</div>
-        	</button>
+        <li *ngFor="let app of applications" class="nav-item my-1">            
+            <button type="button" class="btn btn-block" [class.active]="selectedApp.id == app.id" (click)="onSelect(app.id)">
+                <div class="row">
+                    <div class="col-4 p-0 text-right d-inline-block">
+                        <img *ngIf="app.icon" [src]="sanitize(app.icon)">
+                    </div>
+                    <div class="col-8 p-0 text-left d-inline-block navbar-text">{{app.name}}</div>
+                </div>
+            </button>
         </li>
       </ul>
     </nav>

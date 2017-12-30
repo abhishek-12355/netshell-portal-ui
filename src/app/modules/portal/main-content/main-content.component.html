@@ -1,3 +1,3 @@
 <div class="h-100 w-100">
-	<iframe *ngFor="let item of apps | mapToArray" class="h-100 w-100 border-0" [class.d-none]="selectedAppId !== item.value.id" [src]="item.value.safeUrl"></iframe>
+    <iframe *ngFor="let item of apps | mapToArray" class="h-100 w-100 border-0" [class.d-none]="selectedAppId !== item.value.id" [src]="item.value.safeUrl" id="App_{{item.value.id}}"></iframe>
 </div>

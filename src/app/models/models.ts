@@ -4,4 +4,5 @@ export class Application {
 	id: number;
 	default: boolean;
 	icon: string;
+	domain: string;
 }
